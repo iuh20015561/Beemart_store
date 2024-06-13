@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Trang chủ - Bee Mart</title>
+  <link rel="shortcut icon" href="img/favicon.ico" />
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="js/owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="js/owlcarousel/owl.theme.default.min.css">
+  <script src="js/Jquery/Jquery.min.js"></script>
+  <script src="js/owlcarousel/owl.carousel.min.js"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/topnav.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/banner.css">
+  <link rel="stylesheet" href="css/taikhoan.css">
+  <link rel="stylesheet" href="css/trangchu.css">
+  <link rel="stylesheet" href="css/home_products.css">
+  <link rel="stylesheet" href="css/pagination_phantrang.css">
+  <link rel="stylesheet" href="css/footer.css">
+
+  <script src="data/products.js"></script>
+  <script src="js/classes.js"></script>
+  <script src="js/dungchung.js"></script>
+  <script src="js/trangchu.js"></script>
+
+</head>
+
+<body>
+  <?php
+  include("class.php");
+  $p = new BeeMart();
+  ?>
+  <script>
+  addTopNav();
+  </script>
+  <section>
+    <script>
+    addHeader();
+    </script>
+
+    <div class="banner">
+      <div class="owl-carousel owl-theme"></div>
+    </div>
+    <div class="companyMenu group flexContain"></div>
+    <div class="flexContain">
+
+      <div class="pricesRangeFilter dropdown">
+        <button class="dropbtn">Giá tiền</button>
+        <div class="dropdown-content"></div>
+      </div>
+
+      <div class="promosFilter dropdown">
+        <div class="dropdown-content"></div>
+      </div>
+
+      <div class="starFilter dropdown">
+        <button class="dropbtn">Số lượng sao</button>
+        <div class="dropdown-content"></div>
+      </div>
+
+      <div class="sortFilter dropdown">
+        <button class="dropbtn">Sắp xếp</button>
+        <div class="dropdown-content"></div>
+      </div>
+
+    </div>
+    <hr>
+
+    <div class="contain-products" style="display:none">
+      <div class="choosedFilter flexContain">
+        <a id="deleteAllFilter" style="display: none;">
+          <h3>Xóa bộ lọc</h3>
+        </a>
+      </div>
+      <div class="filterName">
+        <input type="text" placeholder="Lọc trong trang theo tên..." onkeyup="filterProductsName(this)">
+      </div>
+
+      <ul id="products" class="homeproduct group flexContain">
+        <div id="khongCoSanPham">
+          <i class="fa fa-times-circle"></i>
+          Không có sản phẩm nào
+        </div>
+      </ul>
+      <div class="pagination"></div>
+    </div>
+    <div class="contain-khungSanPham"></div>
+
+  </section>
+
+  <script>
+  addContainTaiKhoan();
+  addPlc();
+  </script>
+
+  <div class="footer">
+    <script>
+    addFooter();
+    </script>
+  </div>
+
+  <i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+</body>
+
+</html>

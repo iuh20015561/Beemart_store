@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+.chitietSanpham {
+  border: 3px solid #222;
+}
+
+.chitietSanpham .left {
+  height: 400px;
+  width: 50%;
+  float: left;
+  border: 1px solid #222;
+}
+
+.chitietSanpham .left h1 {
+  display: block;
+  margin: 0 0 0 50px;
+  width: 300px;
+  overflow: hidden;
+  font-size: 24px;
+  color: #333;
+  line-height: 40px;
+}
+
+.chitietSanpham .left .hinhAnhSanPham {
+  position: relative;
+  width: 300px;
+  left: 0px;
+  margin-left: 50px;
+}
+
+.chitietSanpham .right {
+  height: 400px;
+  width: 50%;
+  float: left;
+  border: 1px solid #222;
+}
+
+.chitietSanpham .right h1 {
+  margin: 20px 20px 20px 50px;
+}
+
+.chitietSanpham .right h2 {
+  margin: 20px 20px 20px 50px;
+  color: red;
+}
+
+.chitietSanpham .right .muaNgay,
+.themVaoGio {
+  height: 60px;
+  min-width: 250px;
+  margin-left: 30px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  font-size: larger;
+}
+
+.chitietSanpham .right .muaNgay,
+.themVaoGio:hover {
+  cursor: pointer;
+}
+
+.chitietSanpham .right .muaNgay {
+  background-color: #ed3324;
+}
+
+.chitietSanpham .right .themVaoGio {
+  background-color: #fff;
+  border: 2px solid #ed3324;
+}
+
+.chitietSanpham .right p {
+  margin: 20px;
+  margin-left: 30px;
+  width: 550px;
+  word-break: keep-all;
+  font-size: 28px;
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.area_order {
+  display: block;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.area_order .buy_now {
+  display: block;
+  overflow: hidden;
+  padding: 7px 0;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: normal;
+  color: #fff;
+  text-align: center;
+  background: -webkit-linear-gradient(top, #f59000, #fd6e1d);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.area_order .buy_now:hover {
+  background: -webkit-linear-gradient(top, #fd6e1d, #f59000);
+}
+
+.area_order .buy_now p {
+  display: block;
+  font-size: 13px;
+  margin: 3px 0;
+}

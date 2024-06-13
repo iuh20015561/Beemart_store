@@ -1,0 +1,267 @@
+.listSanPham {
+  margin: 50px auto;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* thêm border và padding cho th */
+.listSanPham th {
+  border: 1px solid #ddd;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #005d85;
+  color: white;
+}
+.listSanPham td {
+  border: 1px solid #ddd;
+}
+
+/* Đổi màu button khi hover vào tr */
+.listSanPham tr:hover td button {
+  background-color: #ffc915;
+}
+
+/* Canh giữa cho cột stt và th */
+.listSanPham tr td:first-child,
+.listSanPham tr th {
+  text-align: center;
+}
+
+/* những tr chẵn sẽ có màu khác */
+.listSanPham tr:nth-of-type(even) {
+  background-color: #f2f2f2;
+}
+
+/* Dòng tổng tiền thanh toán sẽ có màu đậm hơn */
+.listSanPham tr:not(:last-child):hover {
+  background-color: #e5e2e2;
+}
+
+/* Last child là dòng tổng tiền */
+.listSanPham tr:last-child {
+  background-color: #ffc915;
+}
+
+/* Số lượng */
+.listSanPham .soluong {
+  text-align: center;
+}
+.listSanPham .soluong button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: transparent;
+}
+.listSanPham .soluong button:hover {
+  background-color: #008ecc;
+}
+.listSanPham .soluong input {
+  border: none;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  width: 5em;
+  height: 2em;
+}
+
+/* Link sản phẩm */
+.noPadding {
+  padding: 0 0 0 10px;
+  line-height: 2.5em;
+}
+.listSanPham td a {
+  display: block;
+  position: relative;
+  padding: 5px 0;
+}
+.listSanPham td a:hover {
+  text-decoration: underline;
+}
+
+/* Hình ảnh sản phẩm */
+.imgHide img {
+  position: absolute;
+  right: -130px;
+  width: 150px;
+  height: 0;
+  border-radius: 10px;
+  transition-duration: 0.1s;
+}
+.imgHide a:hover img {
+  height: 150px;
+}
+
+/* Cột Giá tiền canh lề phải */
+.alignRight {
+  text-align: right;
+  padding-right: 30px;
+}
+
+/* Nút xóa */
+.fa-trash {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  color: #999;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+
+.fa-trash:hover {
+  color: red;
+  transform: scale(1.5);
+}
+
+/* Nút thanh toán */
+.thanhtoan {
+  font-size: 1.5em;
+  padding: 10px 15px;
+  font-weight: bold;
+  background-color: #ffc915;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+.thanhtoan:hover {
+  background-color: #008ecc;
+  color: white;
+}
+
+.xoaHet {
+  border: none;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+}
+.xoaHet:hover {
+  background-color: rgb(224, 65, 65);
+  color: white;
+}
+
+/* Modal */
+/* CSS cho modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  max-width: 70%;
+  max-height: 85%;
+  overflow-y: auto;
+}
+
+#myModal .modal-content {
+  border-radius: 32px;
+  box-shadow: 0px 2px 60px 1px #000000;
+}
+
+.modal-content > h2 {
+  color: #008ecc;
+}
+
+.form-group {
+  margin-top: 1.5rem;
+  padding: 0 20px;
+  border-radius: 4px;
+  transition: 0.25 ease;
+}
+
+.form-group {
+  position: relative;
+}
+
+.label {
+  position: absolute;
+  left: 2rem;
+  top: -0.8rem;
+  user-select: none;
+  color: #999;
+  pointer-events: none;
+  transition: 0.25s ease;
+  background-color: #ffffff;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.form-group > .form-control {
+  height: 3.5rem;
+}
+
+.form-control:not(:placeholder-shown) + .label,
+.form-control:focus + .label {
+  color: #008ecc;
+}
+
+#Button {
+  padding-top: 0.5rem;
+  padding-left: 17rem;
+}
+
+#Button > .btn-secondary {
+  background-color: #008ecc;
+  border-radius: 12px;
+  color: #ffffff;
+  border: none;
+  width: 5rem;
+  height: 3rem;
+}
+
+#Button > .btn-primary {
+  background-color: #ffc915;
+  border-radius: 12px;
+  color: #000000;
+  border: none;
+  width: 7rem;
+  height: 3rem;
+}
+
+.danger {
+  color: red;
+}
+
+.top-nav {
+  display: inline-block;
+  background: #f1f1f1;
+  width: 100%;
+  margin-top: -3px;
+  height: 2.5rem;
+  border-bottom: 1px #e1e1e1 solid;
+}
+
+form.input-search {
+  margin-left: 20px;
+  background: #ddd;
+  border: 2px solid #bbb;
+  border-radius: 10px;
+  height: 40px;
+  width: 400px;
+  /* điều chỉnh width của ô tìm kiếm trên header ở đây */
+}
+
+.input-search input {
+  float: left;
+  padding-left: 15px;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  height: 100%;
+  background-color: #f3f9fb;
+  width: calc(100% - 85px - 20px);
+  font-size: 0.8rem;
+}

@@ -1,0 +1,33 @@
+/* Top Navigation */
+.top-nav {
+  display: inline-block;
+  background: #f1f1f1;
+  width: 100%;
+  border-bottom: 1px #e1e1e1 solid;
+}
+
+/* Quick link */
+.top-nav-quicklink {
+  float: right;
+}
+.top-nav-quicklink li {
+  display: inline-block;
+  font-size: 1em;
+  color: gray;
+}
+.top-nav-quicklink li a {
+  display: block;
+  color: gray;
+  padding: 8px 15px;
+  transition-duration: 0.15s;
+}
+.top-nav-quicklink li a:hover {
+  padding-top: 4px;
+  border-bottom: 4px solid #000;
+  color: #000;
+}
+.top-nav-quicklink li a:hover i {
+  color: Dodgerblue;
+}
+/* ======= End quick link ======= */
+/* ======= End Top navigation ======= */
